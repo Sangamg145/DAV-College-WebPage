@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School</title>
+
+    <!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+<!-- Google Fonts -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+<!-- Bootstrap core CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+<!-- Material Design Bootstrap -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+
+<!-- JQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+
+
+</head>
+<body>
+    <!--Navbar -->
+<nav class="mb-1 navbar navbar-expand-lg navbar-dark" style="background-color:darkorange; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4"
+      aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
+        <!-- Links -->
+    <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+      <li class="nav-item">
+          <a class="nav-link" href="faculti.html">Faculties</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="examination.html">Examination</a>
+        </li>
+        <!-- Dropdown -->
+        <li class="nav-item dropdown multi-level-dropdown">
+          <a href="#" id="menu" data-toggle="dropdown" class="nav-link dropdown-toggle w-100">Login</a>
+          <ul class="dropdown-menu mt-1 rounded-0 secondary-color border-0 z-depth-0">
+            <li class="dropdown-item dropdown-submenu p-0">
+              <a href="#" data-toggle="dropdown" class="dropdown-toggle text-warning  ml-3 w-100 " >Student Login </a>
+              <ul class="dropdown-menu rounded-5 secondary-color border-0 z-depth-0">
+                <li class="dropdown-item p-0">
+                  <a href="studlogin.html" class="text-warning w-100">New</a>
+                </li>
+                <li class="dropdown-item p-0">
+                  <a href="#" class="text-white w-100">Old</a>
+                </li>
+                <li class="dropdown-item dropdown-submenu p-0">
+                  <a href="#" data-toggle="dropdown" class="dropdown-toggle text-white w-100">Hello </a>
+                  <ul class="dropdown-menu mr-2 rounded-0 primary-color border-0 z-depth-1 r-100 ">
+                    <li class="dropdown-item p-0">
+                      <a href="#" class="text-white w-100">Some</a>
+                    </li>
+                    <li class="dropdown-item p-0">
+                      <a href="#" class="text-white w-100">Text</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="dropdown-item dropdown-submenu">
+              <a href="#" data-toggle="dropdown" class="dropdown-toggle text-white w-100">Admin Login </a>
+              <ul class="dropdown-menu mr-1 rounded-5  primary-color border-0 z-depth-1 r-100 ">
+                <li class="dropdown-item p-0">
+                  <a href="#" class="text-white w-100">How</a>
+                </li>
+                <li class="dropdown-item p-0">
+                  <a href="#" class="text-white w-100">are</a>
+                </li>
+                <li class="dropdown-item p-0">
+                  <a href="#" class="text-white w-100">you </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <!-- Links -->
+      <a class="navbar-brand text-white" href="#" style="font-size: 25px;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-weight: bold;">D.A.V INTER COLLEGE</a>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">
+            <i class="fab fa-facebook-f"></i> Facebook
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <i class="fab fa-instagram"></i> Instagram</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-4" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-user"></i> Profile </a>
+          <div class="dropdown-menu dropdown-menu-right dropdown-info" aria-labelledby="navbarDropdownMenuLink-4">
+            <a class="dropdown-item" href="#">My account</a>
+            <a class="dropdown-item" href="#">Log out</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!--/.Navbar -->
+<div class="container  text-center">
+  <div class="spinner-border text-primary" role="status">
+    <span class="sr-only">Loading...</span>
+  </div>
+  <div class="spinner-border text-secondary" role="status">
+    <span class="sr-only">Loading...</span>
+  </div>
+  <div class="spinner-border text-success" role="status">
+    <span class="sr-only">Loading...</span>
+  </div>
+  <div class="spinner-border text-danger" role="status">
+    <span class="sr-only">Loading...</span>
+  </div>
+  <div class="spinner-border text-warning" role="status">
+    <span class="sr-only">Loading...</span>
+  </div>
+  <div class="spinner-border text-info" role="status">
+    <span class="sr-only">Loading...</span>
+  </div>
+  <div class="spinner-border text-light" role="status">
+    <span class="sr-only">Loading...</span>
+  </div>
+  <div class="spinner-border text-dark" role="status">
+    <span class="sr-only">Loading...</span>
+  </div>
+</div>
+
+  <div style="margin-left: 20px;margin-right: 20px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;" >
+    <div class="row">
+      <div class="col-sm text-center mt-2" style="border-right: 1px solid red;border-left: 1px solid red;" >
+       <h5> News</h5>
+
+        <p>
+        <a href="#">school news</a>
+    </p>
+    <p>
+        <a href="#">school news</a>
+    </p>
+        <a href="#">student news</a>
+      </div>
+      <div class="col-8">
+
+<!--Carousel Wrapper-->
+<div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel">
+    <!--Indicators-->
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-example-2" data-slide-to="1"></li>
+      <li data-target="#carousel-example-2" data-slide-to="2"></li>
+    </ol>
+    <!--/.Indicators-->
+    <!--Slides-->
+    <div class="carousel-inner" role="listbox">
+      <div class="carousel-item active">
+        <div class="view">
+          <img class="d-block m-auto" src="a4.jpeg" style="width: auto;height: 500px;"
+            alt="First slide">
+          <div class="mask rgba-black-light"></div>
+        </div>
+        <div class="carousel-caption">
+          <h3 class="h3-responsive">Light mask</h3>
+          <p>First text</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <!--Mask color-->
+        <div class="view">
+          <img class="d-block m-auto" src="a2.jpg" style="width: auto;height: 500px;"
+            alt="Second slide">
+          <div class="mask rgba-black-light"></div>
+        </div>
+        <div class="carousel-caption">
+          <h3 class="h3-responsive">Strong mask</h3>
+          <p>Secondary text</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <!--Mask color-->
+        <div class="view">
+          <img class="d-block m-auto" src="a1.jpg" style="width: 500px;height: 500px;"
+            alt="Third slide">
+          <div class="mask rgba-black-light"></div>
+        </div>
+        <div class="carousel-caption">
+          <h3 class="h3-responsive">Slight mask</h3>
+          <p>Third text</p>
+        </div>
+      </div>
+    </div>
+    <!--/.Slides-->
+    <!--Controls-->
+    <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+    <!--/.Controls-->
+  </div>
+  <!--/.Carousel Wrapper-->
+</div>
+
+<div class="col-sm text-center mt-2" style="border-right: 1px solid red;border-left: 1px solid red;" >
+    <h5> Announcement</h5>
+
+     <p>
+     <a href="#">school news</a>
+ </p>
+ <p>
+     <a href="#">school news</a>
+ </p>
+     <a href="#">student news</a>
+   </div>
+   <div class="col-8">
+   </div>
+
+ </div>
+</div>
+<div class="container ">
+  <!-- Classic tabs -->
+<div class="classic-tabs mx-2">
+
+  <ul class="nav tabs-orange" id="myClassicTabOrange" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link  waves-light active show" id="profile-tab-classic-orange" data-toggle="tab" href="#profile-classic-orange"
+        role="tab" aria-controls="profile-classic-orange" aria-selected="true"><i class="fas fa-user fa-2x pb-2"
+          aria-hidden="true"></i><br>Profile</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link waves-light" id="follow-tab-classic-orange" data-toggle="tab" href="#follow-classic-orange"
+        role="tab" aria-controls="follow-classic-orange" aria-selected="false"><i class="fas fa-heart fa-2x pb-2"
+          aria-hidden="true"></i><br>Follow</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link waves-light" id="contact-tab-classic-orange" data-toggle="tab" href="#contact-classic-orange"
+        role="tab" aria-controls="contact-classic-orange" aria-selected="false"><i class="fas fa-envelope fa-2x pb-2"
+          aria-hidden="true"></i><br>Contact</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link waves-light" id="awesome-tab-classic-orange" data-toggle="tab" href="#awesome-classic-orange"
+        role="tab" aria-controls="awesome-classic-orange" aria-selected="false"><i class="fas fa-star fa-2x pb-2"
+          aria-hidden="true"></i><br>Be awesome</a>
+    </li>
+  </ul>
+
+  <div class="tab-content card" id="myClassicTabContentOrange">
+    <div class="tab-pane fade active show" id="profile-classic-orange" role="tabpanel" aria-labelledby="profile-tab-classic-orange">
+      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+        totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta
+        sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+        consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui
+        dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora
+        incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+    </div>
+    <div class="tab-pane fade" id="follow-classic-orange" role="tabpanel" aria-labelledby="follow-tab-classic-orange">
+      <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut
+        aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse
+        quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+    </div>
+    <div class="tab-pane fade" id="contact-classic-orange" role="tabpanel" aria-labelledby="contact-tab-classic-orange">
+      <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+        deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non
+        provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.
+        Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est
+        eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas
+        assumenda est, omnis dolor repellendus. </p>
+    </div>
+    <div class="tab-pane fade" id="awesome-classic-orange" role="tabpanel" aria-labelledby="awesome-tab-classic-orange">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+        eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+        deserunt mollit anim id est laborum.</p>
+    </div>
+  </div>
+
+</div>
+<!-- Classic tabs -->
+</div>
+  <!--Footer-->
+  <footer class="page-footer text-center text-md-left pt-4" style="background-color:rgb(70, 35, 11);">
+
+    <!--Footer Links-->
+    <div class="container-fluid">
+
+    </div>
+
+
+    <!--/.Footer Links-->
+
+
+  <!--Social buttons-->
+  <div class="social-section text-center" >
+    <ul class="list-unstyled list-inline">
+      <li class="list-inline-item "style="width:30px;height:20px;border-radius:50%;background-color:#3b5998;"><a class="btn-floating btn-fb"><i class="fab fa-facebook-f fa-1x"> </i></a></li>
+      <li class="list-inline-item"style="width:30px;height:20px;border-radius:50%;background-color:#3b5998;"><a class="btn-floating btn-tw"><i class="fab fa-twitter fa-1x"> </i></a></li>
+      <li class="list-inline-item"style="width:30px;height:20px;border-radius:50%;background-color:#db4a39;"><a class="btn-floating btn-gplus"><i class="fab fa-google-plus-g fa-1x"> </i></a></li>
+      <li class="list-inline-item"style="width:30px;height:20px;border-radius:50%;background-color:#0e76a8;"><a class="btn-floating btn-li"><i class="fab fa-linkedin-in fa-1x"> </i></a></li>
+      <li class="list-inline-item"style="width:30px;height:20px;border-radius:50%;background-color:#211F1F;"><a class="btn-floating btn-git"><i class="fab fa-github fa-1x"> </i></a></li>
+    </ul>
+  </div>
+  <!--/.Social buttons-->
+
+    <!--Copyright-->
+    <div class="footer-copyright py-3 text-center" style="background-color:chocolate;">
+      <div class="container-fluid">
+        © 2018 Copyright: <a href=""> DAV INTER COLLEGE.COM </a>
+
+      </div>
+    </div>
+    <!--/.Copyright-->
+
+  </footer>
+  <!--/.Footer-->
+</div>
+</body>
+</html>
